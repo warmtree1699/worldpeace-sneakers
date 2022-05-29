@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- 載入material-icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header d-flex flex-column align-items-center position-relative pt-4">
+      <div class="logo">
+        <a href="index.html"><img src="https://img.shoplineapp.com/media/image_clips/61f236feb294770032951c6e/original.png?1643263741"
+          alt=""></a>
+      </div>
+
+      <!-- 主選單 -->
+      <ul class="d-flex">
+        <li class="px-3 py-3">
+          <div class="dropdown">
+            <button class="btn text-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              關於我們
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">關於我們</a></li>
+              <li><a class="dropdown-item" href="#">關於會員</a></li>
+              <li><a class="dropdown-item" href="#">活動資訊</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="px-3 py-3"><a href="#">新品上市</a></li>
+        <!-- 所有商品 -->
+        <li class="px-3 py-3">
+
+          <div class="dropdown">
+            <button class="btn text-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              所有商品
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <ul class="d-flex m-0">
+                  <li><a class="dropdown-item py-3 px-2" href="#">Jordon</a></li>
+                  <li><a class="dropdown-item py-3 px-2" href="#">dunk</a></li>
+                  <li><a class="dropdown-item py-3 px-2" href="#">Air Jordon</a></li>
+                  <li><a class="dropdown-item py-3 px-2" href="#">Off-white</a></li>
+                  <li><a class="dropdown-item py-3 px-2" href="#">Fragment</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex m-0 p-0">
+                  <li><a class="dropdown-item py-3" href="#">NIKE</a></li>
+                  <li><a class="dropdown-item" href="#">Air Force 1</a></li>
+                  <li><a class="dropdown-item" href="#">Nike Air Zoom</a></li>
+                  <li><a class="dropdown-item" href="#">Infinity Flyknit 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex m-0 p-0">
+                  <li><a class="dropdown-item py-3" href="#">ADIDAS</a></li>
+                  <li><a class="dropdown-item" href="#">Yeezy</a></li>
+                  <li><a class="dropdown-item" href="#">Ultra boost</a></li>
+                  <li><a class="dropdown-item" href="#">Pureboost</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex m-0 p-0">
+                  <li><a class="dropdown-item py-3" href="#">BAPE</a></li>
+                  <li><a class="dropdown-item" href="#">AAPE</a></li>
+                  <li><a class="dropdown-item" href="#">Dickies</a></li>
+                  <li><a class="dropdown-item" href="#">ESSENTIALS</a></li>
+                  <li><a class="dropdown-item" href="#">Dickies</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="d-flex m-0 p-0">
+                  <li><a class="dropdown-item py-3" href="#">Converse</a></li>
+                  <li><a class="dropdown-item" href="#">FILA</a></li>
+                  <li><a class="dropdown-item" href="#">ASICS</a></li>
+                  <li><a class="dropdown-item" href="#">Champion</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </li>
+        <li class="px-3 py-3"><a href="#">產品分類</a></li>
+        <li class="px-3 py-3"><a href="#">門市資訊</a></li>
+      </ul>
+
+      <!-- 右側選單 -->
+      <ul class="nav position-absolute end-0 px-3 pt-2">
+        <li class="px-3">
+          <a href="member.html"><span class="material-icons">
+              account_circle
+            </span></a>
+        </li>
+        <li class="px-3">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="material-icons">
+              message
+            </span>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">連絡我們</h5>
+                </div>
+                <div class="modal-body">
+                  <p>謝謝您的主動聯絡，請留下要諮詢的問題，我們會用以下資訊進行回覆。</p>
+                  <form action="">
+
+                  </form>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="請輸入您的電子信箱">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">詢問內容</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="輸入您的訊息，若是詢問店內特定商品，請留下商品名稱也歡迎你留下電子信箱以外的聯絡方式，謝謝!"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input type="button" class="btn btn-success w-100" value="發送">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="px-3">
+          <a href="#">
+            <span class="material-icons">
+              shopping_cart
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <%- contents %>
+
+    <!-- footer color: #55baac  -->
+    <!-- 價錢顏色 #64c0b3 -->
+    <!-- 按鈕顏色 #388a82 -->
+    <div class="footer bg-secondary py-5">
+      <div class="container d-flex justify-content-between">
+        <div class="footer-item">
+          <ul class="text-white">
+            <li>
+              <h5>關於我們 <span>About us</span></h5>
+            </li>
+            <li class="mb-2"><small>品牌故事</small></li>
+            <li class="mb-2"><small>聯絡我們</small></li>
+            <li class="mb-2"><small>門市資訊</small></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul class="text-white">
+            <li>
+              <h5>關於會員 <span>Members</span></h5>
+            </li>
+            <li class="mb-2"><small>會員規範</small></li>
+            <li class="mb-2"><small>活動資訊</small></li>
+            <li class="mb-2"><small>隱私條款</small></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul class="text-white">
+            <li>
+              <h5>關於商品<span>Products</span></h5>
+            </li>
+            <li class="mb-2"><a href="#"><small>購買須知</small></a></li>
+            <li class="mb-2"><a href="#"><small>購買流程</small></a></li>
+            <li class="mb-2"><a href="#"><small>售後服務</small></a></li>
+            <li class="mb-2"><a href="#"><small>常見問題</small></a></li>
+            <li class="mb-2"><a href="#"><small>尺寸指南</small></a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul class="text-white">
+            <li class="mb-3">
+              <h5>社群平台<span>Follow us</span></h5>
+            </li>
+            <li class="mb-3">
+              <a href="#"><img
+                  src="https://img.shoplineapp.com/media/image_clips/6052fd944512060017c4a708/original.png?1616051603"
+                  alt="" style="height: 30px;" class="d-inline-block me-2"></a>
+              <a href="#">
+                <img
+                  src="https://img.shoplineapp.com/media/image_clips/6052fdfcd2a54c001d53729d/original.png?1616051708"
+                  alt="" style="height: 30px;" class="d-inline-block me-2">
+              </a>
+              <a href="#">
+                <img
+                  src="https://img.shoplineapp.com/media/image_clips/6052ffb5ad797c51ad552fde/original.png?1616052149"
+                  alt="" style="height: 30px;" class="d-inline-block me-2">
+              </a>
+            </li>
+            <li>
+              <p>2020 © WORLDPEACE</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

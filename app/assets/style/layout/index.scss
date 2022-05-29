@@ -1,0 +1,31 @@
+.index__h1 {
+  color:#00cc99;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero-pic{
+  width: 100%;
+  height: 597px;
+}
+
+
+// util
+
+.bg-cover{
+  object-fit: cover;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.hero-pic{
+  height: 650px;
+  object-fit: cover;
+}
+.banner-pic{
+  height: 600px;
+  background-position: center;
+  background-size: contain;
+}
