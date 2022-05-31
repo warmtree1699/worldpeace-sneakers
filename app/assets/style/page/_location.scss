@@ -1,0 +1,33 @@
+
+// location
+
+.location-list-item a{
+    font-size: 24px;
+    color: #888;
+    transition: .8s;
+    padding: 15px;
+  }
+  
+.location-list-item:hover{
+    border-bottom: 2px solid #af620b;
+  }
+
+.location-card{
+    width: 518px;
+    border: 2px solid #888;
+    border-radius: 10px;
+}
+
+.location-pic{
+    height: 345px;
+    padding: 15px;
+}
+
+.location-title{
+    border-bottom: 2px solid #af620b;
+    padding-bottom: 10px;
+}
+
+.location-body{
+    width: 300px;
+}
