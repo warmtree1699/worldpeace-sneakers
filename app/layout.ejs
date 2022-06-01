@@ -31,7 +31,7 @@
               <li class="nav-item px-3">
                 <div class="dropdown">
                   <a class="nav-link" href="About_us.html" aria-expanded="false">
-                     關於我們
+                    關於我們
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -44,8 +44,9 @@
                 <a class="nav-link" href="#">新品上市</a>
               </li>
               <li class="nav-item px-3 dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              所有商品
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  所有商品
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
@@ -104,16 +105,18 @@
       </nav>
 
       <!-- 右側選單 -->
-      <ul class="nav position-absolute end-0 px-3 pt-2">
-        <li class="px-3 pt-1">
-          <a href="member.html">
-            <span class="material-icons">
-              account_circle
-            </span>
-          </a>
-        </li>
-        <li class="px-3">
-          <!-- Button trigger modal -->
+        <ul class="nav position-absolute end-0 px-3 pt-2 text-gray">
+          <!-- 會員註冊 / 登入 -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="member.html">
+                <span class="material-icons  text-gray">
+                  account_circle
+                </span>
+            </a>
+          </li>
+          <!-- 聯絡我們 -->
+          <li class="nav-item">
+           <!-- Button trigger modal -->
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="material-icons">
               message
@@ -149,9 +152,10 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="px-3">
-          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          </li>
+          <!-- 購物車 -->
+          <li class="nav-item">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight">
             <span class="material-icons">
               shopping_cart
@@ -200,50 +204,14 @@
               </ul>
             </div>
           </div>
-        </li>
-      </ul>
+          </li>
 
-      <nav class="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </nav>
+        </ul>
 
     </div>
   </div>
+
+
 
 
   <%- contents %>
