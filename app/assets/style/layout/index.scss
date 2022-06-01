@@ -1,14 +1,3 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.hero-pic{
-  width: 100%;
-  height: 597px;
-}
-
 
 // util
 
@@ -24,20 +13,40 @@
   width: 100%;
 }
 
+
+
+
 .hero-pic{
   height: 650px;
   object-fit: cover;
 }
-.banner-pic{
+
+.feature-pic{
   height: 600px;
   background-position: center;
   background-size: contain;
-  background-color: rgba(0,0,0, .5);
   height: 100%;
 }
 
-.banner-pic:hover {
-  background-color: rgba(0,0,0, .5);
+.feature-item:hover .feature-body{
+  opacity: 1;
 }
+
+.feature-body{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:　0;
+  right : 0;
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .5s;
+}
+
+
 
 
