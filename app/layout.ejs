@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <!-- 載入material-icon -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- 載入 animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- 載入 aos.css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -105,18 +109,18 @@
       </nav>
 
       <!-- 右側選單 -->
-        <ul class="nav position-absolute end-0 px-3 pt-2 text-gray">
-          <!-- 會員註冊 / 登入 -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="member_login.html">
-                <span class="material-icons  text-gray">
-                  account_circle
-                </span>
-            </a>
-          </li>
-          <!-- 聯絡我們 -->
-          <li class="nav-item">
-           <!-- Button trigger modal -->
+      <ul class="nav position-absolute end-0 px-3 pt-2 text-gray">
+        <!-- 會員註冊 / 登入 -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="member_login.html">
+            <span class="material-icons  text-gray">
+              account_circle
+            </span>
+          </a>
+        </li>
+        <!-- 聯絡我們 -->
+        <li class="nav-item">
+          <!-- Button trigger modal -->
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="material-icons">
               message
@@ -152,10 +156,10 @@
               </div>
             </div>
           </div>
-          </li>
-          <!-- 購物車 -->
-          <li class="nav-item">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        </li>
+        <!-- 購物車 -->
+        <li class="nav-item">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight">
             <span class="material-icons">
               shopping_cart
@@ -204,13 +208,14 @@
               </ul>
             </div>
           </div>
-          </li>
+        </li>
 
-        </ul>
+      </ul>
 
     </div>
   </div>
 
+  <h1 classs="animate__fadeInLeft">123</h1>
 
 
 
@@ -284,6 +289,10 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
 </body>
 
 </html>
