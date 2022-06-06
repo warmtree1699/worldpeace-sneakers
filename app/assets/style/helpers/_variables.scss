@@ -67,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       #16dfad; // $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -89,6 +89,8 @@ $theme-colors: (
   "dark":       $dark,
   "gray":        #156,
 ) !default;
+
+// #0d6efd; 原本的primary藍
 // scss-docs-end theme-colors-map
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.

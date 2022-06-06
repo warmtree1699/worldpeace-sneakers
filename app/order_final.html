@@ -1,0 +1,57 @@
+---
+title: 沃皮斯潮流
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <!-- 購物進度表 -->
+    <div class="order-progress">
+        <div class="position-relative m-4">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <button type="button"
+                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                style="width: 2rem; height:2rem;">1</button>
+            <button type="button"
+                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                style="width: 2rem; height:2rem;">2</button>
+            <button type="button"
+                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill"
+                style="width: 2rem; height:2rem;">3</button>
+        </div>
+        <ul class="d-flex justify-content-between m-0 p-0">
+            <li>
+                <p>購物車</p>
+            </li>
+            <li>
+                <p>填寫資料</p>
+            </li>
+            <li>
+                <p>訂單確認</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="text-center py-5">
+        <span class="material-icons final-check border border-success text-success border-4">
+            check
+        </span>
+    </div>
+
+    <div class="order-final-body mx-auto">
+        <h2 class="text-center">感謝您的訂購 !</h2>
+        <h5 class="mb-3">訂單編號: MU8ZQ12X465DS</h5>
+        <h5 class="mb-3">訂單日期 : 2020/6/25</h5>
+        <h5 class="text-success mb-3">訂單金額 : NT$9,845</h5>
+        <h5 class="mb-3">付款方式 : 信用卡</h5>
+         <a href="./index.html">
+            <button type="button" class="btn-lg btn-primary my-3 px-4 w-100">繼續購物</button>
+         </a>   
+    </div>
+
+    </a>
+</div>
