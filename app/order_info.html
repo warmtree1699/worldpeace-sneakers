@@ -1,0 +1,247 @@
+---
+title: 沃皮斯潮流
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <!-- 購物進度表 -->
+    <div class="order-progress">
+        <div class="position-relative m-4">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <button type="button"
+                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                style="width: 2rem; height:2rem;">1</button>
+            <button type="button"
+                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                style="width: 2rem; height:2rem;">2</button>
+            <button type="button"
+                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                style="width: 2rem; height:2rem;">3</button>
+        </div>
+        <ul class="d-flex justify-content-between m-0 p-0">
+            <li>
+                <p>購物車</p>
+            </li>
+            <li>
+                <p>填寫資料</p>
+            </li>
+            <li>
+                <p>訂單確認</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 資料名稱 -->
+    <div class="row py-3">
+        <div class="col-md-5">商品資料</div>
+        <div class="col-md-2 text-center">單件價格</div>
+        <div class="col-md-3 text-center">數量</div>
+        <div class="col-md-2 text-center">小計</div>
+    </div>
+
+    <!-- 購物清單 -->
+
+    <!-- AJ4 -->
+    <div class="row">
+        <div class="col-md-5">
+            <div class="mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/62985410d9c46300279d7d09/800x.webp?source_format=jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <p> Air Jordan 4 " Military Black " 黑白 男款 DH6927-111 [台灣現貨]</p>
+                            <p class="card-text">US 8.5 / 26.5 CM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 text-center py-3">NT$8,800
+        </div>
+        <div class="col-md-3 text-center py-3">
+            1
+        </div>
+        <div class="col-md-2 text-center py-3">
+            NT$8,800
+        </div>
+    </div>
+
+    <!-- dickles -->
+    <div class="row">
+        <div class="col-md-5">
+            <div class="mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/6001607df73c420024a53689/800x.webp?source_format=jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <p> Air Jordan 4 " Military Black " 黑白 男款 DH6927-111 [台灣現貨]</p>
+                            <p class="card-text">US 8.5 / 26.5 CM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 text-center py-3">NT$980
+        </div>
+
+        <div class="col-md-3 text-center py-3">
+            1
+        </div>
+
+        <div class="col-md-2 text-center py-3">
+            NT$980
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-5 offset-md-7">
+            <ul class="m-0 p-0">
+                <li class="mb-3">
+                    <span class="float-start">小計:</span>
+                    <span class="float-end">NT$9,780</span>
+                    <span class="clearfix"></span>
+                </li>
+                <li class="mb-3">
+                    <span class="float-start">運費:</span>
+                    <span class="float-end">NT$65</span>
+                    <span class="clearfix"></span>
+                </li>
+                <li class="mb-3 border-bottom border-gray pb-3">
+                    <span class="float-start fw-bold">合計:</span>
+                    <span class="float-end fw-bold">NT$9,845</span>
+                    <span class="clearfix"></span>
+                </li>
+                <li class="mb-3">
+                    <span class="float-start">取貨後2天獲得點數</span>
+                    <span class="float-end">+9780點</span>
+                    <span class="clearfix"></span>
+                </li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- 顧客資料 -->
+            <form action="">
+                <h5>顧客資料</h5>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">顧客名稱</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入姓名">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">電子信箱</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">電話號碼</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        儲存這個電話號碼
+                    </label>
+                </div>
+            </form>
+
+            <!-- 訂單備註 -->
+
+            <form action="">
+                <h5 class="bg-primary">訂單備註</h5>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="有甚麼想告訴賣家嗎?"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+
+            <!-- 送貨資料 -->
+            <form action="">
+                <h5>送貨資料
+                    <span class="float-end">運費: NT$65</span>
+                    <span class="clearfix"></span>
+                </h5>
+                <p>已選擇的送貨方式: 全家店到店 取貨不付款 (單筆訂單超過兩雙鞋款請勿選擇此配送方式)</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        收件人資料與顧客資料相同
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">收件人名稱</label>
+                    <input type="text" class="form-control">
+                    <p>請填入收件人真實姓名，以確保順利收件</p>
+                </div>
+                <div class="mb-3 pb-3 border-bottom border-gray">
+                    <label  class="form-label">收件人電話號碼</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <p>選擇門市</p>
+                    <button type="button" class="btn btn-success w-100">搜尋門市</button>
+                </div>
+            </form>
+
+            <!-- 付款資料 -->
+            <form action="">
+                <h5>付款資料</h5>
+                <p>已選擇的付款方式: 信用卡（支援國內外Visa, Master, JCB）
+                </p>
+                <!-- 持卡人名字+號碼 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">持卡人名字</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <p>與信用卡上名稱相同</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">信用卡號碼</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <p>不留空格</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 有效日期 + 安全碼 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                有效日期
+                            </label>
+                            <input type="text" class="form-control" placeholder="MM/YY">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">安全碼(CVC)</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <p>本網站採用喬睿科技TapPay SSL交易傳輸系統，該系統通過PCI-DSS國際信用卡組織VISA、MasterCard等產業資料安全Level 1等級，完善保護您的付款傳輸資料。</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
