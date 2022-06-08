@@ -1,0 +1,13 @@
+
+
+@mixin mobile{
+    @media( min-width: 375px){
+        @content;
+    }
+}
+
+@mixin text-hide{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}

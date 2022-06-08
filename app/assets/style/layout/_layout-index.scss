@@ -1,7 +1,9 @@
 .logo img{
     width: 104px;
     height: 104px;
+    @include text-hide;
 }
+
 
 
 
@@ -30,4 +32,10 @@
     border: 1px solid #000;
     border-radius: 5px;
     padding: 10px;
+}
+
+
+.nav-item:hover {
+    color :$primary;
+    border-bottom: 2px solid $primary;
 }

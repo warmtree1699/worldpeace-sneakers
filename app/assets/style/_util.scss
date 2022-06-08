@@ -1,0 +1,33 @@
+// util
+
+.bg-cover{
+    object-fit: cover;
+  }
+  
+  .bg-contain{
+    object-fit: contain;
+  }
+  
+  .w-100{
+    width: 100%;
+  }
+  .clearfix{
+    float: none;
+  }
+
+  // 文字大小 14 16
+
+
+
+  .fz-1{
+    font-size: 14px;
+  }
+  .fz-2{
+    font-size: 16px;
+  }
+
+  .fz-mo-1{
+    @include mobile{
+      font-size: 14px;
+    }
+  }

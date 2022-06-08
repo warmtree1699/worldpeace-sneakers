@@ -1,10 +1,17 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+// 讀取順序由上到下   這個順序不要動 functions > varibale > bootstrap
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './layout/index.scss';
-@import './layout/layout-index';
+
+
+
 @import './base';
+@import './helpers/mixin';
+@import './util';
+@import './layout/index';
+@import './layout/layout-index';
+
 
 // page
 @import './page/member';
