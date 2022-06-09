@@ -14,24 +14,24 @@ current: index
                     aria-valuemax="100"></div>
             </div>
             <button type="button"
-                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill text-white"
                 style="width: 2rem; height:2rem;">1</button>
             <button type="button"
-                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill text-white"
                 style="width: 2rem; height:2rem;">2</button>
             <button type="button"
-                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-gray-100 rounded-pill text-white"
                 style="width: 2rem; height:2rem;">3</button>
         </div>
         <ul class="d-flex justify-content-between m-0 p-0">
             <li>
-                <p>購物車</p>
+                <p class="fw-bold">購物車</p>
             </li>
             <li>
-                <p>填寫資料</p>
+                <p class="fw-bold ps-3">填寫資料</p>
             </li>
             <li>
-                <p>訂單確認</p>
+                <p class="fw-bold">訂單確認</p>
             </li>
         </ul>
     </div>
@@ -139,7 +139,7 @@ current: index
            <!-- 顧客資料 -->
         <div class="col-md-6">
             <form action="" class="border p-3">
-                <h5>顧客資料</h5>
+                <h5 class="bg-gray-100 py-2 ps-3 rounded">顧客資料</h5>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">顧客名稱</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入姓名">
@@ -160,7 +160,7 @@ current: index
                     </label>
                 </div>
 
-                <h5 class="bg-primary">訂單備註</h5>
+                <h5 class="bg-gray-100 py-2 ps-3 rounded">訂單備註</h5>
                 <div class="mb-3">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                         placeholder="有甚麼想告訴賣家嗎?"></textarea>
@@ -171,8 +171,8 @@ current: index
           <!-- 送貨資料 -->
         <div class="col-md-6">
             <form action="" class="border p-3 mb-5">
-                <h5>送貨資料
-                    <span class="float-end">運費: NT$65</span>
+                <h5 class="bg-gray-100 py-2 ps-3 rounded">送貨資料
+                    <span class="float-end pe-3">運費: NT$65</span>
                     <span class="clearfix"></span>
                 </h5>
                 <p>已選擇的送貨方式: 全家店到店 取貨不付款 (單筆訂單超過兩雙鞋款請勿選擇此配送方式)</p>
@@ -193,7 +193,7 @@ current: index
                 </div>
                 <div>
                     <p>選擇門市</p>
-                    <button type="button" class="btn btn-success w-100 fw-bold">搜尋門市</button>
+                    <button type="button" class="btn btn-primary text-white w-100 fw-bold">搜尋門市</button>
                 </div>
             </form>
 
@@ -247,7 +247,7 @@ current: index
                 </div>
 
                 <a href="./order_final.html">
-                    <button class="btn btn-success w-100 fw-bold" type="button">提交訂單</button>
+                    <button class="btn btn-primary text-white w-100 fw-bold" type="button">提交訂單</button>
                 </a>
 
                 <!-- button 沒家到 type="button" 會無法連結到其他網頁 -->
