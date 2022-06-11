@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    門市據點
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- 載入material-icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- 載入 animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- 載入 aos.css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="position-relative">
+  <div class="container">
+    <div class="header d-flex flex-column align-items-center position-relative pt-4">
+      <div class="logo mb-5 m-md-0">
+        <a href="index.html"><img
+            src="https://img.shoplineapp.com/media/image_clips/61f236feb294770032951c6e/original.png?1643263741"
+            alt=""></a>
+      </div>
+
+      <!-- 主選單 -->
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- 關於我們 -->
+              <li class="nav-item main-menu-item px-3">
+                <div class="dropdown">
+                  <a class="nav-link" href="About_us.html" aria-expanded="false">
+                    關於我們
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 新品上市 -->
+              <li class="nav-item main-menu-item px-3">
+                <a class="nav-link" href="#">新品上市</a>
+              </li>
+              <!-- 所有商品 -->
+              <li class="nav-item main-menu-item px-3 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  所有商品
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./list-jordon.html">Jordon</a></li>
+                  <li><a class="dropdown-item" href="#">NIKE</a></li>
+                  <li><a class="dropdown-item" href="#">Adidas</a></li>
+                  <li><a class="dropdown-item" href="#">Dickles</a></li>
+                  <li><a class="dropdown-item" href="#">Surpreme</a></li>
+                </ul>
+              </li>
+              <!-- 門市據點 -->
+              <li class="nav-item main-menu-item px-3">
+                <a href="./location.html" class="nav-link">門市據點</a>
+              </li>
+              <!-- 活動資訊 -->
+              <li class="nav-item main-menu-item px-3">
+                <a class="nav-link">活動資訊</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- 右側選單 -->
+      <ul class="nav position-absolute end-0 px-3 pt-2 text-gray d-none d-md-flex">
+        <!-- 會員註冊 / 登入 -->
+        <li class="nav-item">
+          <a class="nav-link text-primary" aria-current="page" href="./member_login.html">
+            <span class="material-icons">
+              account_circle
+            </span>
+          </a>
+        </li>
+        <!-- 聯絡我們 -->
+        <li class="nav-item">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="material-icons text-primary">
+              message
+            </span>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">連絡我們</h5>
+                </div>
+                <div class="modal-body">
+                  <p>謝謝您的主動聯絡，請留下要諮詢的問題，我們會用以下資訊進行回覆。</p>
+                  <form action="">
+
+                  </form>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入您的電子信箱">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">詢問內容</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="輸入您的訊息，若是詢問店內特定商品，請留下商品名稱也歡迎你留下電子信箱以外的聯絡方式，謝謝!"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input type="button" class="btn btn-primary text-white w-100" value="發送">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 購物車 -->
+        <li class="nav-item">
+
+          <button type="button" class="btn position-relative" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="material-icons text-primary">
+              shopping_cart
+            </span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+3 <span
+                class="visually-hidden">unread messages</span></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">購物清單</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="p-0 m-0 d-flex flex-column">
+                <li class="d-flex">
+                  <img
+                    src="https://images.stockx.com/images/Air-Jordan-1-Retro-Fragment-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1606316843"
+                    class="cart-pic bg-contain">
+                  <div class="px-2">
+                    <h5>AIR Jordan 1 x Fragment Design 716371-040 閃電 藤原浩 藍白黑 [EW]</h5>
+                    <p>US9 / 27cm</p>
+                    <p>NT$4,280</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="https://images.stockx.com/images/Air-Jordan-1-Retro-Fragment-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1606316843"
+                    class="cart-pic bg-contain">
+                  <div class="px-2">
+                    <h5>AIR Jordan 1 x Fragment Design 716371-040 閃電 藤原浩 藍白黑 [EW]</h5>
+                    <p>US9 / 27cm</p>
+                    <p>NT$4,280</p>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <img
+                    src="https://images.stockx.com/images/Air-Jordan-1-Retro-Fragment-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1606316843"
+                    class="cart-pic bg-contain">
+                  <div class="px-2">
+                    <h5>AIR Jordan 1 x Fragment Design 716371-040 閃電 藤原浩 藍白黑 [EW]</h5>
+                    <p>US9 / 27cm</p>
+                    <p>NT$4,280</p>
+                  </div>
+                </li>
+                <a class="btn btn-primary text-white w-100" href="./order_cart.html">訂單結帳</a>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- 回到最上層 -->
+  <button id="back_top" type="button" class="btn back_top">
+    <span class="material-icons">
+      arrow_upward
+    </span>
+  </button>
+
+
+  
+<div>
+    <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60e4389aad21f9001435aa7e/4000x.webp?source_format=jpg"
+        alt="" class="w-100">
+</div>
+
+<div class="container">
+
+    <!-- location-list  -->
+    <ul class="d-block d-md-flex justify-content-center py-5">
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                金門旗艦店
+            </a></li>
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                沃皮斯形象店
+            </a></li>
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                基隆店 Gospel
+            </a></li>
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                西門店
+            </a></li>
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                新竹渦輪店
+            </a></li>
+        <li class="location-list-item fw-bold"><a href="#" class="text-gray">
+                新竹遠百店
+            </a></li>
+    </ul>
+
+    <!-- <div class="location-card mb-5">
+        <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60deace17241310035e65fd0/1200x.webp?source_format=jpg"
+            alt="" class="location-pic w-100">
+        <h3 class="location-title text-center">金門旗艦店｜KINMEN</h3>
+        <div class="bg">
+            <ul class="location-body mx-auto">
+                <li>
+                    <span>金門縣金城鎮浯江北堤路9巷9號1F</span>
+                </li>
+                <li>
+                    <span> (082) 323-658</span>
+                </li>
+                <li> 12：00 ~ 22：00</li>
+                <li>粉絲專業</li>
+            </ul>
+        </div>
+    </div> -->
+
+
+    <ul class="p-0 m-0 d-flex flex-wrap justify-content-center">
+        <!-- 金門旗艦店 -->
+        <li class="location-card mb-5 me-5 ">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60deace17241310035e65fd0/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">金門旗艦店｜KINMEN</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>金門縣金城鎮浯江北堤路9巷9號1F</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small>(082) 323-658</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        12：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- 沃皮斯形象店 -->
+        <li class="location-card mb-5 me-5">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60deae5758a9ef0023d52550/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">沃皮斯形象店｜KINMEN</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>金門縣金城鎮中興路146巷6之3號</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small> (082) 323-765</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        12：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- 基隆店 -->
+        <li class="location-card mb-5 me-5">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60deb51aa06b5900267cb463/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">基隆店｜GOSPEL</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>基隆市仁愛區愛二路54巷5號1F</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small>(02) 2428-2438</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        14：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- 西門町店｜XIMENDING -->
+        <li class="location-card mb-5 me-5">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60e252ec3b00d0002cd3889b/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">西門町店｜XIMENDING</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>台北市萬華區昆明街134-3號1F</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small>(02) 2388-0318</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        13：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- 新竹遠百店 -->
+        <li class="location-card mb-5 me-5">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/60e29b115b7dcc0035b41a04/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">新竹遠百店｜WARREN</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>新竹市文昌街101號1F</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small>(03) 5250-532</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        11：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- 新竹渦輪店 -->
+        <li class="location-card mb-5 me-5">
+            <img src="https://shoplineimg.com/5fb51d7f25f3d00031ddb131/6108f751b7151c002031edd9/1200x.webp?source_format=jpg"
+                alt="" class="location-pic w-100">
+            <h3 class="location-title text-center fw-bold">新竹渦輪店｜WARREN</h3>
+            <div class="bg">
+                <ul class="location-body mx-auto">
+                    <li class="d-flex mb-2">
+                        <span class="material-icons me-2">
+                            location_on
+                        </span>
+                        <small>新竹市信義街84-1號1F</small>
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            call
+                        </span>
+                        <small>(03) 5280-387</small>
+                    </li>
+                    <li li class="d-flex align-items-center mb-2">
+                        <span class="material-icons me-2">
+                            schedule
+                        </span>
+                        11：00 ~ 22：00
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <!-- footer color: #55baac  -->
+    <!-- 價錢顏色 #64c0b3 -->
+    <!-- 按鈕顏色 #388a82 -->
+    <div class="footer bg-secondary py-5">
+      <div class="container d-flex justify-content-between">
+        <!-- 關於我們 -->
+        <div class="footer-item">
+          <ul class="text-white">
+            <li>
+              <p>關於我們 <span>About us</span></p>
+            </li>
+            <li class="mb-2"><small><a href="#">品牌故事</a></small></li>
+            <li class="mb-2"><small><a href="#">聯絡我們</a></small></li>
+            <li class="mb-2"><small><a href="#">門市資訊</a></small></li>
+          </ul>
+        </div>
+        <!-- 關於會員 -->
+        <div class="footer-item d-none d-md-block">
+          <ul class="text-white">
+            <li>
+              <p>關於會員 <span>Members</span></p>
+            </li>
+            <li class="mb-2"><a href="#"><small>會員規範</small></a></li>
+            <li class="mb-2"><a href="#"><small>活動資訊</small></a></li>
+            <li class="mb-2"><a href="#"><small>隱私條款</small></a></li>
+          </ul>
+        </div>
+        <!-- 關於商品 -->
+        <div class="footer-item">
+          <ul class="text-white">
+            <li>
+              <p>關於商品<span>Products</span></p>
+            </li>
+            <li class="mb-2"><a href="#"><small>購買須知</small></a></li>
+            <li class="mb-2"><a href="#"><small>購買流程</small></a></li>
+            <li class="mb-2"><a href="#"><small>售後服務</small></a></li>
+            <li class="mb-2"><a href="#"><small>常見問題</small></a></li>
+            <li class="mb-2"><a href="#"><small>尺寸指南</small></a></li>
+          </ul>
+        </div>
+        <!-- 社群平台 -->
+        <div class="footer-item">
+          <ul class="text-white">
+            <li class="mb-3">
+              <p>社群平台<span>Follow us</span></p>
+            </li>
+            <li class="mb-3">
+              <a href="#"><img
+                  src="https://img.shoplineapp.com/media/image_clips/6052fd944512060017c4a708/original.png?1616051603"
+                  alt="" style="height: 30px;" class="d-inline-block me-2"></a>
+              <a href="#">
+                <img
+                  src="https://img.shoplineapp.com/media/image_clips/6052fdfcd2a54c001d53729d/original.png?1616051708"
+                  alt="" style="height: 30px;" class="d-inline-block me-2">
+              </a>
+              <a href="#">
+                <img
+                  src="https://img.shoplineapp.com/media/image_clips/6052ffb5ad797c51ad552fde/original.png?1616052149"
+                  alt="" style="height: 30px;" class="d-inline-block me-2">
+              </a>
+            </li>
+            <li>
+              <p>2020 © WORLDPEACE</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 這個順序不能更動-->
+    
+
+    <!-- 載入aos動畫 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+    
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- back_top的JS寫法 -->
+    <script src="./assets/js/backtop.js"></script>
+
+
+
+
+
+<!-- 
+    <script>
+      AOS.init();
+    </script> -->
+</body>
+
+</html>
