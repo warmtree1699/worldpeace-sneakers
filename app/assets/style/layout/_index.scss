@@ -1,7 +1,6 @@
 
 .hero-pic{
   height: 650px;
-  object-fit: cover;
 }
 
 .feature-pic{
@@ -28,6 +27,44 @@
   justify-content: center;
   opacity: 0;
   transition: .5s;
+}
+
+
+.card-body:hover .card-info{
+  left: 0;
+}
+
+
+.card-info{
+  position: absolute;
+  top: 0;
+  left: -200%;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+.card-body:hover .card-info-right{
+  right: 0;
+}
+
+
+.card-info-right{
+  position: absolute;
+  top: 0;
+  right: -200%;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+
+.card-title{
+  font-size: 80px;
 }
 
 
