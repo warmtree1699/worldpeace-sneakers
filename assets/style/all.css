@@ -11847,8 +11847,6 @@ img {
 
 .hero-pic {
   height: 650px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .feature-pic {
@@ -11883,6 +11881,44 @@ img {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
+}
+
+.card-body:hover .card-info {
+  left: 0;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.card-body:hover .card-info-right {
+  right: 0;
+}
+
+.card-info-right {
+  position: absolute;
+  top: 0;
+  right: -200%;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.card-title {
+  font-size: 80px;
 }
 
 .logo img {

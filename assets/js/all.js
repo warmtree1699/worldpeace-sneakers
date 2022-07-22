@@ -13,4 +13,11 @@ $(function () {
     return false;
   });
 });
+"use strict";
+
+$(function () {
+  var navHeight = $(".header").offset().top;
+  console.log(navHeight);
+  console.log(123);
+});
 //# sourceMappingURL=all.js.map
